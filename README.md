@@ -1,5 +1,13 @@
 # Example data of prometheus exporter
 
+## Using
+
+```
+podman build . -t mini_httpd
+podman run -t --rm -v ./:/var/www/localhost/htdocs -p 9000:80 mini_httpd
+```
+metrics are available on localhost:9000/collect.sh
+
 ### shell_flask_exporter.sh
 
 output:
